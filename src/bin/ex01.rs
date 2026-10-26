@@ -1,7 +1,7 @@
 use ready_set_boole::multiplier;
 
 fn main() {
-    for (a, b) in [(0, 5), (1, 1), (7, 6), (12345, 67), (65536, 65536)] {
-        println!("{a} * {b} = {}", multiplier(a, b));
-    }
+    println!("0 * 5 = {}", multiplier(0, 5));
+    println!("7 * 6 = {}", multiplier(7, 6));
+    println!("12345 * 67 = {}", multiplier(12345, 67));
 }

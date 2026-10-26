@@ -1,7 +1,9 @@
 use ready_set_boole::eval_set;
 
 fn main() {
-    println!("{:?}", eval_set("AB&", &[vec![0, 1, 2], vec![0, 3, 4]]));
-    println!("{:?}", eval_set("AB|", &[vec![0, 1, 2], vec![3, 4, 5]]));
-    println!("{:?}", eval_set("A!", &[vec![0, 1, 2]]));
+    // A = {0, 1, 2}, B = {0, 3, 4}
+    let sets = vec![vec![0, 1, 2], vec![0, 3, 4]];
+    println!("AB& = {:?}", eval_set("AB&", &sets));
+    println!("AB| = {:?}", eval_set("AB|", &sets));
+    println!("A!B& = {:?}", eval_set("A!B&", &sets));
 }

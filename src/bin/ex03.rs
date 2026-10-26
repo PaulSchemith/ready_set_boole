@@ -1,7 +1,9 @@
 use ready_set_boole::eval_formula;
 
 fn main() {
-    for f in ["10&", "10|", "11>", "10=", "1011||=", "1!"] {
-        println!("{f} -> {}", eval_formula(f));
-    }
+    println!("10& = {}", eval_formula("10&"));
+    println!("10| = {}", eval_formula("10|"));
+    println!("11> = {}", eval_formula("11>"));
+    println!("10= = {}", eval_formula("10="));
+    println!("1011||= = {}", eval_formula("1011||="));
 }

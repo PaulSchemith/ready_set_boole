@@ -1,7 +1,8 @@
 use ready_set_boole::sat;
 
 fn main() {
-    for f in ["AB|", "AB&", "AA!&", "AA^"] {
-        println!("{f} -> {}", sat(f));
-    }
+    println!("AB| -> {}", sat("AB|"));
+    println!("AB& -> {}", sat("AB&"));
+    println!("AA!& -> {}", sat("AA!&"));
+    println!("AA^ -> {}", sat("AA^"));
 }

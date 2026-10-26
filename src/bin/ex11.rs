@@ -1,8 +1,8 @@
 use ready_set_boole::{map, reverse_map};
 
 fn main() {
-    for (x, y) in [(0, 0), (1, 0), (0, 1), (12345, 54321), (65535, 65535)] {
-        let n = map(x, y);
-        println!("reverse_map({n}) = {:?} (expected ({x}, {y}))", reverse_map(n));
-    }
+    // On encode (x, y) en un nombre avec map, puis on décode avec reverse_map.
+    let n = map(12345, 54321);
+    println!("map(12345, 54321) = {n}");
+    println!("reverse_map({n}) = {:?}", reverse_map(n));
 }
